@@ -1,0 +1,158 @@
+.product-image {
+    width: 100px;
+}
+.upsell-container {
+    /* max-width: 540px; */
+    display: grid;
+    gap: 10px;
+    padding: 72px 10px;
+}
+
+.upsell-title { 
+    text-align: center;
+    margin: 0px auto 24px;
+    color: rgb(48, 48, 48);
+    border: none;
+    font-size: 32px;
+    font-weight: 800;
+    font-family: Gilroy;
+    line-height: 1.23;
+}
+
+.upsell-products-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+.product-card-container {
+    box-sizing: border-box;
+    margin: 0px;
+    min-width: 0px;
+    border: 0.65px solid rgb(213, 213, 213);
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    font-style: normal;
+    font-weight: 500;
+    font-family: CrapcaseText-Medium, GilroyMedium, Gilroy;
+    line-height: 120%;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    width: 100%;
+    max-width: 100%;
+    padding: 16px 12px 12px;
+    transition: 0.15s ease-in-out;
+    background-color: rgb(255, 255, 255);
+}
+
+.upsell-product-vendor {
+    box-sizing: border-box;
+    margin: 0px 0px 8px;
+    min-width: 0px;
+    font-style: normal;
+    font-family: CrapcaseText-Medium, GilroyMedium, Gilroy;
+    text-align: start;
+    font-weight: 700;
+    font-size: 12px;
+    color: rgb(92, 149, 255);
+    line-height: 14.4px;    
+}
+
+.product-card {
+    gap: 10px;
+    display: flex;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 100%;
+}
+.product-image-container {
+    width: 44px;
+    height: 44px;
+}
+.product-image {
+    width: 44px;
+    height: 44px;
+}
+
+.upsell-product-name-container {
+    box-sizing: border-box;
+    margin: 0px 12px 0px 0px;
+    min-width: 0px;
+}
+.upsell-product-name {
+    margin: 0;
+    max-width: 22rem;
+}
+
+.upsell-product-datails-container {
+    box-sizing: border-box;
+    margin: 0;
+    min-width: 0;
+    align-items: center;
+    display: flex;
+}
+
+.upsell-product-quantity {
+    box-sizing: border-box;
+    margin: 0px 12px 0px 0px;
+    min-width: 0px;
+    font-style: normal;
+    line-height: 130%;
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(136, 136, 136);
+    font-family: CrapcaseText, Gilroy, gilroy-regular, Lato, helvetica, "sans-serif" !important;
+}
+
+.upsell-product-price {
+    box-sizing: border-box;
+    margin: 0px;
+    min-width: 0px;
+    font-style: normal;
+    line-height: 130%;
+    font-size: 12px;
+    font-weight: 800;
+    color: rgb(0, 0, 0);
+    font-family: CrapcaseText, Gilroy, gilroy-regular, Lato, helvetica, "sans-serif" !important;
+}
+
+.upsell-product-add-button-container {
+    box-sizing: border-box;
+    margin: 0px;
+    min-width: 0px;
+    -webkit-box-align: start;
+    align-items: start;
+    display: flex;
+}
+
+.upsell-product-add-button {
+    box-sizing: border-box;
+    margin: 0px 0px 0px auto;
+    appearance: none;
+    text-align: center;
+    text-decoration: none;
+    -webkit-box-align: center;
+    align-items: center;
+    border: 2px solid rgb(91, 150, 255);
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    font-style: normal;
+    font-weight: 500;
+    font-family: CrapcaseText-Medium, GilroyMedium, Gilroy;
+    line-height: 120%;
+    width: unset;
+    height: 28px;
+    min-width: 59px;
+    border-radius: 14px;
+    padding: 8px 16px;
+    transition: 0.15s ease-in-out;
+    background-color: rgb(92, 149, 255);
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    outline: none;
+    cursor: pointer !important;
+}

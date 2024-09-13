@@ -1,0 +1,53 @@
+{% assign products = block.settings.product_list %}
+
+<span>
+  <div class="perks-wrapper">
+  <div class="perks-inner-container">
+    <div class="perks-item">
+      <img class="perks-image"
+        src="https://cdn.shopify.com/s/files/1/1320/9925/files/50-of-profits-donated.svg?v=1671133782"
+        alt="50% of profits donated"
+      >
+      <h4 class="perks-description">50% of profits donated</h4>
+    </div>
+    <div class="perks-item">
+      <img class="perks-image"
+        src="https://cdn.shopify.com/s/files/1/0094/6955/8884/files/made-with-bamboo.svg?v=1670813886"
+        alt="100% Bamboo"
+      >
+      <h4 class="perks-description">100% Bamboo</h4>
+    </div><div class="perks-item">
+      <img class="perks-image"
+        src="https://cdn.shopify.com/s/files/1/1320/9925/files/super-long-tp.svg?v=1671133782"
+        alt="SUPER LONG rolls"
+      >
+      <h4 class="perks-description">SUPER LONG rolls</h4>
+    </div>
+    <div class="perks-item">
+      <img class="perks-image"
+        src="https://cdn.shopify.com/s/files/1/1320/9925/files/b-corp.svg?v=1671133782"
+        alt="B Corp™ Certified for Environmental Impact"
+      >
+      <h4 class="perks-description">B Corp™ Certified for Environmental Impact</h4>
+    </div>
+  </div>
+  <div class="le-perks-bottom-container">
+  </div>
+</div>
+</span>
+
+{% schema %}
+{
+  "name": "perks Section",
+  "target": "section",
+  "templates": ["product", "index"],
+  "stylesheet": "perk.css",
+  "available_if": "{{ app.metafields.test_data.show_perks_section }}",
+  "settings": [
+    { "type": "color", "id": "colour", "label": "Star Colour", "default": "#ff0000" }
+  ]
+}
+{% endschema %}
+
+
+

@@ -1,0 +1,27 @@
+
+<script>console.log('products', products) </script> 
+<div class="upsell-container">
+  <h4 class="upsell-title">Add to your order</h4>
+  {%- for productItem in products -%}
+    <div class="upsell-products-container">
+      <div class="product-card-container">
+        <h2 class="upsell-product-vendor">{{productItem.vendor}}</h2>
+        <div class="product-card">
+          <a class="product-image-container" href="{{productItem.url}}">
+            <img class="product-image" src="{{ productItem.images[0] | img_url }}" alt="">
+          </a>
+          <div class="upsell-product-name-container" style="flex: 1 1 0%; gap: 8px;">
+            <p class="upsell-product-name">{{productItem.title}}</p>
+            <div class="upsell-product-datails-container">
+              <p class="upsell-product-quantity">12 Boxes</p>
+              <p class="upsell-product-price">{{ productItem.price | money }}</p>
+            </div>
+          </div>
+          <div class="upsell-product-add-button-container">
+            <button class="upsell-product-add-button" is="add-to-cart" data-productId="{{productItem.variants[0].id}}">Add</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  {%- endfor -%}
+</div>

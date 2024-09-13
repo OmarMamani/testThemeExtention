@@ -1,0 +1,26 @@
+{% assign products = block.settings.product_list %}
+
+<span>
+  {% render 'upsell-snippet', products: products %}
+</span>
+
+{% schema %}
+{
+  "name": "Upsell",
+  "templates": ["product", "index"],
+  "stylesheet": "upsell.css",
+  "javascript": "add-to-cart.js",
+  "target": "section",
+  "settings": [
+    {
+      "type": "product_list",
+      "id": "product_list",
+      "label": "product list",
+      "limit": 5
+    }
+  ]
+}
+{% endschema %}
+
+
+
